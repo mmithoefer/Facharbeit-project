@@ -3,6 +3,7 @@
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\SchuelerController;
+use App\Http\Controllers\KlasseController;
 
 /*
 |--------------------------------------------------------------------------
@@ -20,7 +21,11 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 });
 
 
-
 Route::resource('schueler', SchuelerController::class)->only([
     'destroy', 'show', 'store', 'update'
 ]);
+
+Route::resource('klasse', KlasseController::class)->only([
+    'destroy', 'show', 'store', 'update'
+]);
+
