@@ -25,7 +25,7 @@ class SchuelerController extends Controller
         validator($request->all(), [
             'name' => 'required',
             'age' => 'required',
-            'user.name' => 'required'
+            'username' => 'required'
         ])->validate();
 
         $schueler = new Schueler;
