@@ -7,6 +7,12 @@ use Illuminate\Http\Request;
 
 class KlasseController extends Controller
 {
+    public function index()
+    {
+        $schueler = klasse::all();
+        return response()->json($schueler);
+    }
+
     public function show($klassenId)
     {
         $klasse = klasse::find($klassenId);

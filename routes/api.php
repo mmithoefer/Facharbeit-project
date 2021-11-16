@@ -22,10 +22,10 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 
 
 Route::resource('schueler', SchuelerController::class)->only([
-    'destroy', 'show', 'store', 'update'
+    'destroy', 'show', 'store', 'update', 'index'
 ]);
 
 Route::resource('klasse', KlasseController::class)->only([
-    'destroy', 'show', 'store', 'update'
+    'destroy', 'show', 'store', 'update', 'index'
 ]);
 

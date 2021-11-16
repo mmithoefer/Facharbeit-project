@@ -8,6 +8,12 @@ use Illuminate\Support\Facades\Log;
 
 class SchuelerController extends Controller
 {
+    public function index()
+    {
+        $schueler = Schueler::all();
+        return response()->json($schueler);
+    }
+
     public function show($schuelerId)
     {
         $schueler = Schueler::find($schuelerId);
