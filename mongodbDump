@@ -1,0 +1,1 @@
+{"_id":{"$oid":"619a569ecaa8c078a529a3f2"},"name":"max.muster","age":"1234","username":"Max Mustermann","updated_at":{"$date":"2021-11-21T14:24:29.34Z"},"created_at":{"$date":"2021-11-21T14:24:29.34Z"}}
